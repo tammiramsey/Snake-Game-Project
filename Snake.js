@@ -92,5 +92,11 @@ document.addEventListener("keydown", (event) => {
         case "ArrowDown":
             direction = "down";
             break;
-        case "ArrowLeft"
+        case "ArrowLeft":
+            direction = "left";
+            break;
+        case "ArrowRight":
+            direction = "right";
+            break;
     }
+});
