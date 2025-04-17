@@ -58,7 +58,7 @@ function generateFood() {
 function checkCollisions() {
     const head = snake[0];
 
-    if (head.x < 0 || head.x >= gridSize || head.y < 0 || head.y < 0 || head.y >= gridSize) {
+    if (head.x < 0 || head.x >= gridSize || head.y < 0 || head.y >= gridSiz) {
         resetGame();
     }
 
@@ -100,3 +100,5 @@ document.addEventListener("keydown", (event) => {
             break;
     }
 });
+
+setInterval(updateGame, 100); // Add game loop
